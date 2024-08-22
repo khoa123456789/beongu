@@ -1,0 +1,59 @@
+.mau-don-xin-vang-thi {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.mau-don-xin-vang-thi h1,
+.mau-don-xin-vang-thi h2,
+.mau-don-xin-vang-thi h3,
+.mau-don-xin-vang-thi h4 {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.mau-don-xin-vang-thi p {
+    margin: 10px 0;
+}
+
+.mau-don-xin-vang-thi ul {
+    margin-left: 20px;
+}
+
+.mau-don-xin-vang-thi table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.mau-don-xin-vang-thi table,
+.mau-don-xin-vang-thi th,
+.mau-don-xin-vang-thi td {
+    border: 1px solid black;
+}
+
+.mau-don-xin-vang-thi th,
+.mau-don-xin-vang-thi td {
+    padding: 8px;
+    text-align: left;
+}
+
+.mau-don-xin-vang-thi .signatures {
+    margin-top: 30px;
+}
+
+.mau-don-xin-vang-thi .signature-blocks {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.centered-text {
+    text-align: center;
+}
+.centered-text2 {
+    text-align: right;
+}
+@media print {
+    .no-print {
+        display: none;
+    }
+}

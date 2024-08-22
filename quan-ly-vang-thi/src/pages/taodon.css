@@ -1,0 +1,144 @@
+/* Container */
+
+.info-row {
+    display: flex;
+    gap: 10px; /* Khoảng cách giữa các phần tử */
+    flex-wrap: wrap; /* Đảm bảo nếu không đủ chỗ, các phần tử sẽ tự động xuống dòng */
+    justify-content: space-between; /* Đặt các phần tử cách đều nhau */
+    align-items: center; /* Canh giữa theo chiều dọc */
+}
+
+.info-row h2 {
+    margin: 0; /* Loại bỏ margin để các phần tử h2 nằm sát nhau */
+    font-size: 25px; /* Điều chỉnh kích thước chữ nếu cần */
+}
+
+.spacing-large {
+    margin-top: 40px; /* Khoảng cách lớn giữa các phần */
+}
+
+
+.table-wrapper input[type="checkbox"] {
+    margin: 0;
+    cursor: pointer;
+}
+/* taodon.css */
+
+.info-row {
+    margin-bottom: 20px; /* Tạo khoảng cách giữa các hàng */
+}
+
+.spacing-large {
+    margin-top: 20px; /* Tạo khoảng cách lớn giữa các phần */
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+/* taodon.css */
+
+/* Định dạng chung cho nút bấm */
+/* taodon.css */
+
+/* Định dạng chung cho phần chứa nút bấm */
+.button-container {
+    display: flex;
+    justify-content: flex-end; /* Căn chỉnh nội dung về phía bên phải */
+    margin-top: 20px; /* Khoảng cách trên nút bấm (tuỳ chọn) */
+}
+
+button {
+    background-color: #007bff; /* Màu nền của nút */
+    color: #fff; /* Màu chữ của nút */
+    border: none; /* Không có viền */
+    padding: 10px 20px; /* Khoảng cách xung quanh nội dung nút */
+    font-size: 16px; /* Kích thước chữ */
+    border-radius: 5px; /* Bo góc nút */
+    cursor: pointer; /* Con trỏ chuột khi di chuột lên nút */
+    transition: background-color 0.3s ease; /* Hiệu ứng chuyển đổi màu nền khi di chuột */
+    justify-content: flex-end;
+}
+
+/* Định dạng khi di chuột lên nút */
+button:hover {
+    background-color: #0056b3; /* Màu nền khi di chuột lên nút */
+}
+
+/* Định dạng khi nút bị nhấn */
+button:active {
+    background-color: #004494; /* Màu nền khi nút bị nhấn */
+}
+
+/* Định dạng cho các trạng thái khác (nếu cần) */
+button:disabled {
+    background-color: #cccccc; /* Màu nền cho nút không thể nhấn */
+    color: #666666; /* Màu chữ cho nút không thể nhấn */
+    cursor: not-allowed; /* Con trỏ chuột khi di chuột lên nút không thể nhấn */
+}
+input[type="file"] {
+    padding: 10px; /* Khoảng đệm bên trong */
+    margin-top: 15px; /* Khoảng cách phía trên */
+    border: 2px solid #ccc; /* Viền */
+    border-radius: 5px; /* Bo góc */
+    background-color: #f9f9f9; /* Màu nền */
+    cursor: pointer; /* Con trỏ chuột khi hover */
+    font-size: 16px; /* Kích thước chữ */
+    width: 100%; /* Chiếm toàn bộ chiều rộng của parent container */
+}
+
+input[type="file"]:hover {
+    border-color: #777; /* Đổi màu viền khi hover */
+    background-color: #e9e9e9; /* Đổi màu nền khi hover */
+}
+
+input[type="file"]::file-selector-button {
+    padding: 5px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #007bff; /* Màu nền nút chọn file */
+    color: white; /* Màu chữ nút chọn file */
+    cursor: pointer;
+}
+
+input[type="file"]::file-selector-button:hover {
+    background-color: #0056b3; /* Màu nền nút khi hover */
+    border-color: #004085;
+}
+
+.uploaded-files {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.uploaded-file {
+    margin: 5px;
+    text-align: center;
+}
+
+.uploaded-file img {
+    max-width: 100px;
+    max-height: 100px;
+    display: block;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.uploaded-files ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.uploaded-files li {
+    margin: 5px 0;
+    padding: 5px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
