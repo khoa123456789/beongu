@@ -61,14 +61,14 @@ const Dondagui = () => {
     };
     const getTrangThaiColor = (trangThai) => {
         switch (trangThai) {
-            case 'Chờ Duyệt':
+            case 'Chờ duyệt':
                 return '#1E90FF'; // Màu xanh nước biển
-            case 'Được Duyệt':
+            case 'Duyệt':
                 return '#28A745'; // Màu xanh lá cây
-            case 'Không Được Duyệt':
+            case 'Từ Chối':
                 return '#DC3545'; // Màu đỏ
             default:
-                return '#333'; // Màu mặc định
+
         }
     };
     const evenButton = () => {
@@ -82,6 +82,11 @@ const Dondagui = () => {
             <h2 className="page-header" style={{ color: getTrangThaiColor(donVangThiData.TRANG_THAI) }}>
                 TRẠNG THÁI ĐƠN: {donVangThiData.TRANG_THAI}
             </h2>
+            {donVangThiData.LY_DO_TU_CHOI && (
+                <div className="info-row">
+                    <h2 className='dondagui'>Lý Do Từ Chối: {donVangThiData.LY_DO_TU_CHOI} </h2>
+                </div>
+            )}
             <div className="info-row">
                 <h1>I. THÔNG TIN SINH VIÊN:</h1>
             </div>
@@ -116,12 +121,16 @@ const Dondagui = () => {
                 </div>
             </div>
             <div className="info-row">
-                <h2 className='dondagui'>Lý Do: {donVangThiData.LY_DO_VANG_THI} </h2>
+                <h2 className='dondagui'>Lý Do Vắng Thi: {donVangThiData.LY_DO_VANG_THI} </h2>
             </div>
-            <div className="info-row">
-                <h2 className='dondagui'>Minh Chứng:</h2>
+            <div>
+                <h1>Minh Chứng:</h1>
+                <img src={`http://localhost:8345/uploads/${donVangThiData.MINH_CHUNG}`} alt="Uploaded" style={{ width: '300px', height: 'auto',border: '2px solid #000', }} />
             </div>
-            <img src={donVangThiData.MINH_CHUNG} alt="Minh chứng" style={{ width: '100px', height: 'auto' }} />
+            <image src=''></image>
+
+
+
             <div className='button-container'>
                 <button onClick={evenButton}>Xuất Đơn</button>
             </div>

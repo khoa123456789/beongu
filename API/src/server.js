@@ -13,7 +13,7 @@ require("dotenv").config();
 configCors(app);
 
 // Middleware
-app.use('/uploads', express.static(path.join(__dirname, './data/minhchung')));
+app.use('/uploads', express.static(path.join('data', 'minhchung')));
 app.use(express.json({ limit: "50mb", extended: true }));
 app.use(express.urlencoded({ limit: "50mb", extended: true }));
 app.use(express.static(process.env.UPLOADED_FOLDER));
